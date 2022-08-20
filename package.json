@@ -4,7 +4,7 @@
   "description": "y",
   "main": "y",
   "scripts": {
-    "test": "y"
+    "compile:scss" : "sass --watch scss:dist/css"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,8 @@
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.54.5"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.0"
   }
 }
