@@ -1,4 +1,5 @@
-@use "../abstract/variable";
+@use "../abstract/variable" as var;
+@use "./typography"as ty;
 
 
 
@@ -19,9 +20,16 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
+	box-sizing: border-box;
 //	font: inherit;
 //	vertical-align: baseline;
 }
+
+*{
+	font-family: ty.$font;
+
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {

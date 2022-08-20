@@ -1,0 +1,8 @@
+$font: 'Outfit', sans-serif; 
+$weights : (
+    "light" : 400,
+    "bold" : 700
+);
+@function Weight($weight-name){
+    @return map-get($weights,$weight-name);
+}
